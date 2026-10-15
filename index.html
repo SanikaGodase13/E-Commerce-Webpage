@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Store</title>
+
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+        }
+
+        /* Banner */
+        .banner {
+            background-color: #ff9800;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 18px;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 40px 8%;
+            text-align: center;
+        }
+
+        .products h2 {
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        /* Product Card */
+        .product-card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0 10px;
+        }
+
+        .price {
+            color: #e65100;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            background-color: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .buy-btn:hover {
+            background-color: #e68900;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+
+            .banner h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">My Store</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Cart 🛒</a>
+        </nav>
+    </header>
+
+
+    <!-- Banner -->
+    <section class="banner">
+        <h1>Welcome to My Store</h1>
+        <p>Find the best products at affordable prices!</p>
+    </section>
+
+
+    <!-- Products -->
+    <section class="products">
+
+        <h2>Our Products</h2>
+
+        <div class="product-container">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="Classic T-Shirt.webp" alt="T-Shirt">
+
+                <h3>Classic T-Shirt</h3>
+
+                <p class="price">₹499</p>
+
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="Sports Shoes.jpeg" alt="Shoes">
+
+                <h3>Sports Shoes</h3>
+
+                <p class="price">₹1,499</p>
+
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="Headphones.jpeg" alt="Headphones">
+
+                <h3>Headphones</h3>
+
+                <p class="price">₹999</p>
+
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="Smart Watch.jpeg" alt="Watch">
+
+                <h3>Smart Watch</h3>
+
+                <p class="price">₹2,499</p>
+
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
